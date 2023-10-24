@@ -2,63 +2,66 @@
 <html lang="en">
 
 <head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SonicZen Earbuds</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="css/grid.css" rel="stylesheet" />
-  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <!-- link to greensock main library and scroll plugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 
 <body>
+
   <model-viewer class="grid-con full-width-grid-con" id="model" src="model/sonic_zen.glb" ar
     ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/brand.jpg" shadow-intensity="2"
     shadow-softness="1" environment-image="images/pillars_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m"
     field-of-view="20deg">
 
-    <button class="Hotspot" slot="hotspot-1"
-      data-position="0.23369406397572956m 0.7983508252983297m -0.5040265088779172m"
+    <div class="Hotspot" slot="hotspot-1" data-position="0.23369406397572956m 0.7983508252983297m -0.5040265088779172m"
       data-normal="0.5285265470512426m -0.0550742287304356m 0.8471283954583497m" data-visibility-attribute="visible">
       <div class="HotspotAnnotation" id="hotspot-1"></div>
+    </div>
 
-    </button><button class="Hotspot" slot="hotspot-2"
-      data-position="0.1292598457825607m -0.5568223088106271m -0.4126381615776568m"
+    <div class="Hotspot" slot="hotspot-2" data-position="0.1292598457825607m -0.5568223088106271m -0.4126381615776568m"
       data-normal="0.666005046102283m -0.08014482071757606m 0.7416293456157488m" data-visibility-attribute="visible">
       <div class="HotspotAnnotation" id="hotspot-2"></div>
+    </div>
 
-    </button><button class="Hotspot" slot="hotspot-3"
-      data-position="-2.242264002340827m 0.9564809966705226m -1.969812043961042m"
+    <div class="Hotspot" slot="hotspot-3" data-position="-2.242264002340827m 0.9564809966705226m -1.969812043961042m"
       data-normal="-0.6050599133154172m 0.46832315632891786m -0.6438757042666388m" data-visibility-attribute="visible">
       <div class="HotspotAnnotation" id="hotspot-3"></div>
+    </div>
 
-    </button><button class="Hotspot" slot="hotspot-4"
-      data-position="-0.03656893271771747m 1.1355287713774256m -2.7103211311350943m"
+    <div class="Hotspot" slot="hotspot-4" data-position="-0.03656893271771747m 1.1355287713774256m -2.7103211311350943m"
       data-normal="0.18879859387814174m -0.1448991562601412m -0.9712668662446668m" data-visibility-attribute="visible">
       <div class="HotspotAnnotation" id="hotspot-4"></div>
+    </div>
 
-    </button><button class="Hotspot" slot="hotspot-5"
+    <div class="Hotspot" slot="hotspot-5"
       data-position="-0.10505942275494909m -0.25581659319641314m -0.9885916394812941m"
       data-normal="0.8178584674804928m -0.31755423676904626m 0.47986126524287015m" data-visibility-attribute="visible">
       <div class="HotspotAnnotation" id="hotspot-5"></div>
+    </div>
 
-    </button><button class="Hotspot" slot="hotspot-6"
-      data-position="0.307046324371756m 1.4074306392933007m -0.4991781754676794m"
+    <div class="Hotspot" slot="hotspot-6" data-position="0.307046324371756m 1.4074306392933007m -0.4991781754676794m"
       data-normal="0.5223098712236517m -0.045862247554492905m 0.8515216102199537m" data-visibility-attribute="visible">
       <div class="HotspotAnnotation" id="hotspot-6"></div>
+    </div>
 
-    </button><button class="Hotspot" slot="hotspot-7"
-      data-position="-0.12018539611584195m 1.9471653628269225m -1.8562967380968223m"
+    <div class="Hotspot" slot="hotspot-7" data-position="-0.12018539611584195m 1.9471653628269225m -1.8562967380968223m"
       data-normal="0.13341566947598105m 0.9822758109293792m 0.13166051192861986m" data-visibility-attribute="visible">
-
       <div class="HotspotAnnotation" id="hotspot-7"></div>
-    </button>
+    </div>
     <!-- <div class="progress-bar hide" slot="progress-bar"> <div class="update-bar"></div></div> -->
 
     <button slot="ar-button" id="ar-button">View in your space</button>
+
     <div id="ar-prompt">
-      <img src="images/ar_hand_prompt.png" />
+      <img src="images/ar_hand_prompt.png" alt="ar img">
     </div>
+
   </model-viewer>
   <!-- Loads <model-viewer> for browsers: -->
 
