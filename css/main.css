@@ -3,7 +3,10 @@ model-viewer {
   max-width: 1200px;
   height: 720px;
   margin: 0 auto;
-  background: url(../images/bg.jpg) no-repeat;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .Hotspot {
